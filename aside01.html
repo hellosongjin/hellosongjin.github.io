@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+<style type="text/css">
+*{
+	padding: 0;
+	margin: 0;
+}
+@keyframes A{
+0% {transform: translateX(400px);}
+20% {transform: translateX(0px);}
+33% {transform: translateX(0px);}
+46% {transform: translateX(-295px);}
+59% {transform: translateX(-295px);}
+72% {transform: translateX(-580px);}
+85% {transform: translateX(-580px);}
+100% {transform: translateX(-875px);}
+}
+#img1 {
+	animation-name: A;
+	animation-duration: 14s;
+	animation-iteration-count: infinite;
+	position: relative;
+	left : 0px;
+	bottom: 222px;
+}
+#img2 {
+	animation-name: A;
+	animation-duration: 14s;
+	animation-iteration-count: infinite;
+	position: relative;
+	left: 290px;
+	bottom: 444px;
+}
+#img3 {
+	animation-name: A;
+	animation-duration: 14s;
+	animation-iteration-count: infinite;
+	position: relative;
+	left: 580px;
+	bottom: 666px;
+}
+#img4 {
+	animation-name: A;
+	animation-duration: 14s;
+	animation-iteration-count: infinite;
+	position: relative;
+	left: 870px;
+	bottom: 888px;
+}
+body {
+	font-family: 함초롬바탕;
+}
+.Wcolor {
+	color: white;
+}
+.Gcolor {
+	color: gray;
+}
+.Ocolor {
+	color: #FF9100;
+}
+#A:hover {
+	opacity: 40%;
+	background-image: url(./img/사이드버튼1_1/png);
+	width: 55px;
+}
+
+@keyframes textColorAnimation{
+0% { color: #FF0049; }
+33% { color: #FF9A00; }
+63% { color: #00D1FF; }
+100% { color: #FF0049; }
+}
+
+.TC{
+	animation-name: textColorAnimation;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+}
+
+li{
+	list-style-type: none;
+	font-size: 11px
+}
+.dropdown{
+display: inline-block;
+border: dashed 0px red;
+position: relative;
+}
+.dropdownContents{
+display: none;
+/*border: dashed 1px blue;*/
+position: absolute;
+width: 110px;
+padding: 24px;
+line-height:30px;
+background-color: #F0F0F0;
+right: 0px;
+opacity: 80%;
+color: #2D59FF;
+}
+.dropdown:hover .dropdownContents{
+	display: block;
+}
+
+.TCH:hover {
+	color: #FF94A0;
+}
+
+
+</style>
+</head>
+<body>
+<div>
+<img src="./img/라인.png" width="290px"><br>
+<table border="0" width="285px" height="100px">
+	<tr>
+		<th rowspan="4" width="100px" class="Wcolor" bgcolor=#FF94A0>회원정보</th>
+	</tr>
+	<tr>
+		<th class="Gcolor" bgcolor=#F0F0F0>송아지</th>
+	</tr>
+	<tr>
+		<th class="Ocolor" bgcolor=#F0F0F0>골드회원</th>
+	</tr>
+	<tr>
+		<th class="Gcolor" bgcolor=#F0F0F0>가입일: 2020.02.02</th>
+	</tr>
+</table>
+<img src="./img/라인.png" width="290px"><br>
+<table border="0" width="285px" height="100px">
+	<tr>
+		<th class="Gcolor" bgcolor=#F0F0F0><a href="animal01.html" target="bb"><img src="./img/사이드버튼0.png"></a></th>
+		<th class="Gcolor" bgcolor=#F0F0F0>보유쿠폰</th>
+	</tr>
+	<tr>
+		<th class="Wcolor" bgcolor=#FF94A0>장바구니</th>
+		<th class="Wcolor" bgcolor=#FF94A0>
+		<div class="dropdown">
+		<ul> 4장
+			<div class="dropdownContents">
+				<li class="TCH">50% 할인 쿠폰</li>
+				<li class="TCH">전품목 10% 할인 쿠폰</li>
+				<li class="TCH">배송비 무료 쿠폰</li>
+				<li class="TCH">무료 간식 랜덤 쿠폰</li>
+			</div>
+	</ul>
+	</div>
+		</th>
+	</tr>
+</table>
+<img src="./img/라인.png" width="290px"><br>
+<table border="0" width="285px" height="35px">
+	<tr>
+		<th class="Wcolor" bgcolor=#FF94A0 width="100px">
+			적립 포인트
+		</th>
+		<th class="TC" bgcolor=#F0F0F0>
+			7080P
+		</th>
+	</tr>
+</table>
+</div>
+<table border="0" width="285px" height="100px">
+	<tr>
+		<th class="Gcolor"><a href="title01.html" target="bb"><img id="A" src="./img/사이드버튼1.png"></a></th>
+		<th class="Gcolor"><a href="title02.html" target="bb"><img id="A" src="./img/사이드버튼2.png"></a></th>
+		<th class="Gcolor"><a href="title03.html" target="bb"><img id="A" src="./img/사이드버튼3.png"></a></th>
+	</tr>
+	<tr>
+		<th class="Gcolor"><a href="title04.html" target="bb"><img id="A" src="./img/사이드버튼4.png"></a></th>
+		<th class="Gcolor"><a href="title05.html" target="bb"><img id="A" src="./img/사이드버튼5.png"></a></th>
+		<th class="Gcolor"><a href="title06.html" target="bb"><img id="A" src="./img/사이드버튼6.png"></a></th>
+	</tr>
+</table>
+<br>
+<a href="animal01.html" target="bb"><img src="./img/사이드0.png" width="290px"></a>
+<div>
+	<img id="img1" src="./img/사이드1.png" width="291px">
+	<img id="img2"src="./img/사이드2.png" width="291px">
+	<img id="img3"src="./img/사이드3.png" width="291px">
+	<img id="img4"src="./img/사이드4.png" width="291px">
+</div>
+</body>
+</html>
