@@ -1,27 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf-8">
-<title>lightSlider</title>
-<link type="text/css" rel="stylesheet" href="https://ggumimugg.cafe24.com/css/lightslider.css">                  
-<script
-  src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
-<script src="https://ggumimugg.cafe24.com/js/lightslider.js"></script>
-  <script>
-$(document).ready(function() {
-    $("#imageGallery").lightSlider({
-        item: 1, // 한 번에 표시할 슬라이드 수
-        slideMargin: 0, // 각 슬라이드 사이의 간격              
-        auto: true, // 자동재생
-        pauseOnHover: true, // 마우스를 올리면 자동 재생을 일시 중지
-        loop: true, // 마지막 슬라이드일 때 처음으로 돌아가서 반복      
-        pause: 3000, // 각 자동 재생 사이의 시간(ms)      
-        gallery: true, // 하단에 썸네일 이미지 사용  
-        currentPagerPosition:'left', // 썸네일의 위치 'left', 'middle', 'right'
-        /* thumbItem: 10 // 한 번에 표시할 썸네일 수(기본값: 10) */
-    }); 
-});
-</script>
+    <title>1</title>
 <style>
 <style type="text/css">
 *{
@@ -36,9 +16,6 @@ body {
     font-family: 함초롬바탕;
     text-align: center;
 }
-div {
-    bottom: 20px;
-}
 @keyframes textColorAnimation{
 0% { color: #FF0049; }
 33% { color: #FF9A00; }
@@ -51,19 +28,94 @@ h3{
     animation-duration: 2s;
     animation-iteration-count: infinite;
 }
+img{
+    width: 390px;
+}
+#IP{
+    position: relative;
+    right: 155px;
+}
+#TP1{
+    position: relative;
+    left: 387px;
+    bottom: 680px;
+}
+#TP2{
+    position: relative;
+    left: 387px;
+    bottom: 640px;
+}
+#TP3{
+    position: relative;
+    left: 387px;
+    bottom: 610px;
+}
+.T1{
+    font-size: 18px;
+    text-align: center;
+    background-color: #F0F0F0;
+
+}
+.T2{
+    text-align: center;
+    color: #839DFF;
+}
+.T3{
+    color: gray;
+}
+tr{
+    text-align: left;
+}
 </style>
 </head>
-<body>
 <br>
+<body>
 <h3>❛❛오늘의 HOT 상품!❜❜</h3>
-<div id="light-Slider">
-    <ul id="imageGallery">
-        <li data-thumb="./img/간식3.png"><img src="./img/HOT1.png"></li>
-        <li data-thumb="./img/고양이옷1.png"><img src="./img/HOT2.png"></li>
-        <li data-thumb="./img/간식4.png"><img src="./img/HOT3.png"></li>
-        <li data-thumb="./img/햄스터옷1.png"><img src="./img/HOT4.png"></li>
-        <li data-thumb="./img/고양이옷2.png"><img src="./img/HOT5.png"></li>
-    </ul>
+<br>
+<div id="IP">
+    <img src="./img/HOT1.png">
+    <img src="./img/HOT2.png">
+    <img src="./img/HOT3.png">
 </div>
+<div id="TP1">
+    <table border="0" width="300px">
+        <tr>
+            <td class="T1">『 하무하무 식빵 』</td>
+        </tr>
+        <tr>
+            <td class="T2">★★★★★<hr></td>
+        </tr>
+        <tr>
+            <td class="T3">잠깐, 작아도 너무 작은 거 아니야?! 너무… 귀엽잖아! 라고 자연스럽게 생각되는 식빵입니다. 햄스터 전용 간식으로, 아무리 변덕쟁이인 햄스터라도 푹 빠져 넘어올 수 밖에 없습니다.<hr></td>
+        </tr>
+    </table>
+</div>
+<div id="TP2">
+    <table border="0" width="300px">
+        <tr>
+            <td class="T1">『 탐정 셜록 망토 』</td>
+        </tr>
+        <tr>
+            <td class="T2">★★★★☆<hr></td>
+        </tr>
+        <tr>
+            <td class="T3">고양이 인생이지만 한번쯤은 탐정이 되어보는 것도 나쁘지 않을 것 같아요. 어때요, 집사님? 저는 숨겨진 간식을 찾아 떠나고 싶은 고양이라구요! 제 모험을 막지 말아주세요!<hr></td>
+        </tr>
+    </table>
+</div>
+<div id="TP3">
+    <table border="0" width="300px">
+        <tr>
+            <td class="T1">『 말린망고 』</td>
+        </tr>
+        <tr>
+            <td class="T2">★★★☆☆<hr></td>
+        </tr>
+        <tr>
+            <td class="T3">너무 맛있어…! 이것을 맛 본 사람의 한마디 였습니다. 모두가 선호하는 그 맛, 한번 맛 봐보지 않으시겠어요? 맛이 없다면 100% 환불이 가능합니다. 저희 「애니멀 팜」의 명예를 걸고… …!<hr></td>
+        </tr>
+    </table>
+</div>
+</table>
 </body>
 </html>
