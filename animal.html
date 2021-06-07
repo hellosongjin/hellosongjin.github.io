@@ -88,6 +88,27 @@
 	font-family: 함초롬바탕;
 	}
 
+	.dropdown{
+	display: inline-block;
+	border: dashed 0px red;
+	position: relative;
+	}
+	.dropdownContents{
+	display: none;
+	/*border: dashed 1px blue;*/
+	font-size: 14px;
+	position: absolute;
+	width: 10px;
+	padding: 24px;
+	line-height:20px;
+	background-color: #F0F0F0;
+	right: 4px;
+	opacity: 60%;
+	color: #2D59FF;
+	}
+	.dropdown:hover .dropdownContents{
+		display: block;
+	}
 </style>
 </head>
 
@@ -97,7 +118,13 @@
 	<a href="animal01.html" target="bb"><img src="./img/애니멀팜로고.png" width="100"></a>
 </div>
 <div id="top">
-	<a href=""><img src="./img/상단버튼1.png" width="65px"></a>
+	<div class="dropdown">
+		<ul><a href=""><img src="./img/상단버튼1.png" width="65px">
+			<div class="dropdownContents">
+				<li class="TCH">로그인 하세요.</li>
+			</div>
+		</ul></a>
+	</div>
 	<a href=""><img src="./img/상단버튼2.png" width="65px"></a>
 	<a href=""><img src="./img/상단버튼3.png" width="65px"><a>
 	<a href=""><img src="./img/상단버튼4.png" width="65px"></a>
